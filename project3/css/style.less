@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/BebasNeueRegular.eot');
+	src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+		url('../fonts/BebasNeueRegular.woff') format('woff'),
+		url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+		url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'journalism';
+	src: url('../fonts/JOURNALISM.eot');
+	src: url('../fonts/JOURNALISM.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/JOURNALISM.woff2') format('woff2'),
+		url('../fonts/JOURNALISM.woff') format('woff'),
+		url('../fonts/JOURNALISM.ttf') format('truetype'),
+		url('../fonts/JOURNALISM.svg#JOURNALISM') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@h-text: #fff;
+@main-text: #b7b6b6;
+@bg: #000;
+@header-bg: rgba(152,151,151,0.24);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+color: @h-text;
+background-color: @bg;
+}
+.nav-wrap {
+	background-color: @header-bg;
+	height: 47px;
+	}
+.container {
+	max-width: 650px;
+	display: block;
+	margin:auto;
+	padding: 0 10px;
+}
+.logo {
+	width: 100px;
+	float: left;
+	margin-top: 10px;
+	a {
+		opacity: 0.6;
+		transition: all 0.2s;
+		&:hover {
+				opacity: 1;
+				}
+		}
+	}
+
+
+nav {
+	float: right;
+	ul {display: block;
+		li {display: inline-block;
+			margin-left: 30px;
+			padding-top: 15px;
+			padding-bottom: 10px;
+
+			a {text-transform: uppercase;
+				text-decoration: none;
+				color: @main-text;
+				font-size: 18px;
+				font-family: 'Bebas', sans-serif;
+				transition: all 0.2s;
+				padding-bottom: 6px;
+				&:hover {
+					border-bottom: 4px solid @h-text;
+					color: @h-text;
+				}
+				}}}}
+
+h1 {font-size: 80px;
+text-align: center;
+line-height: 80px;
+margin-top: 107px;
+font-family: 'journalism', serif;
+}
+.btn {
+	display: block;
+	text-align: center;
+	margin-top: 48px;
+}
+.btm-info {
+	display:inline-block;
+	border: 3px solid @main-text;
+	font-size: 26px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 22px 4px;
+	color: @main-text;
+	font-family: 'Bebas', sans-serif;
+	&:hover {
+		color: @h-text; 
+		border-color: @h-text;
+		transition: all 0.2s;
+		background-color: @header-bg;
+		border-radius: 50px;
+		padding: 9px 30px 10px;}
+}
+.main {
+	margin-top: 250px;
+	margin-bottom: 110px;
+	p {
+		font-size:18px;
+		font-family: 'Open Sans' sans-serif;
+		margin-bottom: 20px;
+		color: @main-text;
+	}}
+.copy{
+	float: left;
+	p {
+		font-family: 'Bebas', sans-serif;
+		font-size: 12px;
+		color: @main-text;
+		span {
+			font-family: 'Open Sans' sans-serif;
+			display: block;
+			font-size: 18px;
+		}
+
+	}
+
+}
+.social	{
+	float: right;
+	a {
+		opacity: 0.6;
+		&:hover{opacity: 1; transition: 0.2s}	}
+}
+footer {padding-bottom: 30px;}
+.clear {
+	display: block;
+	clear:both;
+
+}
