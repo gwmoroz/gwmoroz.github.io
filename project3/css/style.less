@@ -33,7 +33,7 @@
 
 body {
 color: @h-text;
-background-color: @bg;
+background: @bg url(../images/bg.png)  no-repeat 50% 45px;
 }
 .nav-wrap {
 	background-color: @header-bg;
@@ -85,6 +85,7 @@ text-align: center;
 line-height: 80px;
 margin-top: 107px;
 font-family: 'journalism', serif;
+font-weight: normal;
 }
 .btn {
 	display: block;
@@ -126,11 +127,9 @@ font-family: 'journalism', serif;
 		span {
 			font-family: 'Open Sans' sans-serif;
 			display: block;
-			font-size: 18px;
+			font-size: 16px;
 		}
-
 	}
-
 }
 .social	{
 	float: right;
@@ -138,9 +137,34 @@ font-family: 'journalism', serif;
 		opacity: 0.6;
 		&:hover{opacity: 1; transition: 0.2s}	}
 }
-footer {padding-bottom: 30px;}
+footer {padding-bottom: 30px;
+		position: relative;}
+.flower3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -98;
+}
 .clear {
 	display: block;
 	clear:both;
-
+}
+.flower1 {
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	z-index: -99;
+}
+.flower2 {
+	position: absolute;
+	top: 145px;
+	right: 0px;
+	z-index: -100;
+}
+@media (max-width: 650px) {
+	nav ul li {
+		margin-left: 10px;
+		.container {padding-right: 25px;}
+	}
+	
 }
